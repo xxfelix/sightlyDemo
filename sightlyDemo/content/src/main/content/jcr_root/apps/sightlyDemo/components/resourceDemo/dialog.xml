@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+	    <tabs
+		    jcr:primaryType="cq:Panel"
+		    title="Resource Type Demo">
+		    <items jcr:primaryType="cq:WidgetCollection">
+				<resourceTest
+				    jcr:primaryType="nt:unstructured"
+				    options="/etc/dam/video.profiles.list.json"
+				    type="select"
+				    xtype="selection"
+				    fieldLabel="Resource Test"
+				    name="./resourceTest"/>
+		    </items>
+	    </tabs>
+    </items>
+</jcr:root>
